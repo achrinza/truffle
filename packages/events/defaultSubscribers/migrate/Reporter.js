@@ -338,11 +338,14 @@ class Reporter {
 
     this.currentBlockWait = `Blocks: 0`.padEnd(21) + `Seconds: 0`;
 
-    this.blockSpinner = new Spinner("events:subscribers:migrate:reporter", {
-      text: this.currentBlockWait,
-      indent: 3,
-      color: "red"
-    });
+    this.blockSpinner = new Spinner(
+      "events:subscribers:migrate:reporter",
+      {
+        text: this.currentBlockWait,
+        indent: 3,
+        color: "red"
+      }
+    );
   }
 
   /**
